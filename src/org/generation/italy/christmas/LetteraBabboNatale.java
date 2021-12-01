@@ -1,6 +1,8 @@
 package org.generation.italy.christmas;
 
+
 import java.util.List;
+import java.util.ArrayList;
 
 public class LetteraBabboNatale {
 	
@@ -9,6 +11,7 @@ public class LetteraBabboNatale {
 	private String nome;
 	private String indirizzo;
 	private List<String> listaDesideri;
+
 	
 	/*
 	 * 
@@ -29,11 +32,11 @@ public class LetteraBabboNatale {
 	
 	// costruttore
 	
-//	public LetteraBabboNatale (String nome, String indirizzo) {
-//		this.nome = nome;
-//		this.indirizzo = indirizzo;
-//		this.listaDesideri = new List<String>();
-//	}
+	public LetteraBabboNatale (String nome, String indirizzo) {
+		this.nome = nome;
+		this.indirizzo = indirizzo;
+		this.listaDesideri = new ArrayList<String>();
+	}
 	
 	public LetteraBabboNatale (String nome, String indirizzo, List<String> listaDesideri ) {
 		this.nome = nome;
@@ -42,7 +45,18 @@ public class LetteraBabboNatale {
 	}
 	
 
-
+	public String invia() throws Exception {
+		 if(listaDesideri.size() > 5) {
+			 throw new Exception("Your list is too long");
+		 } 	else {
+			 String risultato = "Nome: " + nome + "\n"
+					  + "Indirizzo: "  + indirizzo + "\n"
+					  + "Lista desideri: ";
+			 // for che mette ogni desiderio nella variabile risultato
+			 return risultato;
+			 //return new List<String> = ;
+		 }
+	 }
 	
 	
 
