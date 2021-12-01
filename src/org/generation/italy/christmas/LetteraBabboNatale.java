@@ -47,7 +47,7 @@ public class LetteraBabboNatale {
 
 	public String invia() throws Exception {
 		 if(listaDesideri.size() > 5) {
-			 throw new Exception("Your list is too long");
+			 throw new Exception("La tua lettera è troppo lunga, non deve contenere più di 5 desideri");
 		 } 	else {
 			 String risultato = "Nome: " + nome + "\n"
 					  + "Indirizzo: "  + indirizzo + "\n"

@@ -68,25 +68,13 @@ public class Main {
 		try {
 			LetteraBabboNatale listaDesideri = new LetteraBabboNatale(nome, indirizzo, wishlist);
 			System.out.println(listaDesideri.invia());
+			System.out.println("La tua lettera è stata inviata!");
 		} catch (Exception e) {
-			System.out.println("Impossibile creare il biglietto:");
 			System.out.println(e.getMessage());
+			System.out.println("Non è stato possibile inviare la tua lettera");
 		}
 		
-		System.out.println("La tua lettera è stata inviata!");
-			
-
-			
-			
-//		//aggiungi t c
-//		try {
-//			Biglietto b = new Biglietto(km, eta, flessibile);
-//			System.out.println("Costo del biglietto: " + b.calcolaPrezzo() + "€");
-//
-//		System.out.println(listaDesideri.invia())
-//		try 
-//		;
-//		
+	
 		scan.close();
 
 	}
