@@ -43,6 +43,50 @@ public class Main {
 			System.out.print(iterator.next() + " ");
 		}
 		
+		
+		/*
+		 * 
+		
+		Nel metodo main, in coda al programma già implementato, 
+		chiedere all’utente il nome e l’indirizzo a cui inviare i regali. 
+		Con quei parametri e con la lista dei desideri già creata 
+		istanziare un nuovo oggetto di tipo LetteraBabboNatale.
+		Chiamare il metodo invia() e stampare a video l’esito dell’invio, 
+		gestendo opportunamente eventuali eccezioni.
+		 */
+		
+		System.out.println(" ");
+		
+		System.out.print("A chi sono destinati questi regali? (inserire nome): ");
+		String nome = scan.nextLine();
+		System.out.print("Dove dovranno essere spediti questi regali? (inserire indirizzo): ");
+		String indirizzo = scan.nextLine();
+
+//		LetteraBabboNatale listaDesideri = new LetteraBabboNatale(nome, indirizzo, wishlist);
+		
+		
+		try {
+			LetteraBabboNatale listaDesideri = new LetteraBabboNatale(nome, indirizzo, wishlist);
+			System.out.println(listaDesideri.invia());
+		} catch (Exception e) {
+			System.out.println("Impossibile creare il biglietto:");
+			System.out.println(e.getMessage());
+		}
+		
+		System.out.println("La tua lettera è stata inviata!");
+			
+
+			
+			
+//		//aggiungi t c
+//		try {
+//			Biglietto b = new Biglietto(km, eta, flessibile);
+//			System.out.println("Costo del biglietto: " + b.calcolaPrezzo() + "€");
+//
+//		System.out.println(listaDesideri.invia())
+//		try 
+//		;
+//		
 		scan.close();
 
 	}

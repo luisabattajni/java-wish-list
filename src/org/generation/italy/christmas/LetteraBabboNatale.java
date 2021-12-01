@@ -51,10 +51,14 @@ public class LetteraBabboNatale {
 		 } 	else {
 			 String risultato = "Nome: " + nome + "\n"
 					  + "Indirizzo: "  + indirizzo + "\n"
-					  + "Lista desideri: ";
+					  + "Lista desideri: " + listaDesideri;
+//					  for(int i = 0; i < listaDesideri.size(); i++) {
+//							System.out.println(listaDesideri.get(i));
+//						};
 			 // for che mette ogni desiderio nella variabile risultato
 			 return risultato;
-			 //return new List<String> = ;
+
+			
 		 }
 	 }
 	
